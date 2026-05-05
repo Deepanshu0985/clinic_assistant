@@ -17,6 +17,28 @@ function formatValue(value) {
   return String(value)
 }
 
+function formatErrorDetail(detail) {
+  if (!detail) {
+    return null
+  }
+
+  if (typeof detail === 'string') {
+    return detail
+  }
+
+  if (Array.isArray(detail)) {
+    return detail
+      .map((item) => item?.msg || item?.message || String(item))
+      .join(', ')
+  }
+
+  if (typeof detail === 'object') {
+    return detail.message || JSON.stringify(detail)
+  }
+
+  return String(detail)
+}
+
 function App() {
   const [rawNotes, setRawNotes] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -41,7 +63,7 @@ function App() {
         let message = 'Failed to process notes. Is the backend running?';
         try {
           const errorData = await response.json();
-          message = errorData.detail || message;
+          message = formatErrorDetail(errorData.detail) || message;
         } catch {
           // Keep the generic message when the backend does not return JSON.
         }
