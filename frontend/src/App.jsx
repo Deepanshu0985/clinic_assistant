@@ -24,8 +24,6 @@ function App() {
   const [error, setError] = useState(null)
 
   const handleSubmit = async () => {
-    if (!rawNotes.trim()) return;
-    
     setIsLoading(true);
     setError(null);
     setResult(null);
@@ -72,7 +70,7 @@ function App() {
           />
           <button 
             onClick={handleSubmit} 
-            disabled={isLoading || !rawNotes.trim()}
+            disabled={isLoading}
           >
             {isLoading ? 'Processing...' : 'Structure Notes'}
           </button>
