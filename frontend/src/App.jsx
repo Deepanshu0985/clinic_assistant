@@ -115,7 +115,7 @@ function App() {
           )}
 
           {isLoading && (
-            <div className="loading-spinner">Processing with Ollama...</div>
+            <div className="loading-spinner">Processing </div>
           )}
 
           {result && (
@@ -153,6 +153,20 @@ function App() {
                   <p>No missing fields flagged.</p>
                 )}
               </div>
+
+              {/* {result.sources?.length > 0 && (
+                <div className="result-block">
+                  <h3>Retrieved Reference Snippets</h3>
+                  <ul className="sources-list">
+                    {result.sources.map((s, index) => (
+                      <li key={index}>
+                        <strong>{s.source?.split('/').pop() || 'unknown'}</strong>
+                        <p>{s.snippet}…</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )} */}
             </div>
           )}
         </div>
