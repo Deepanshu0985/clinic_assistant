@@ -38,7 +38,14 @@ function App() {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to process notes. Is the backend running?');
+        let message = 'Failed to process notes. Is the backend running?';
+        try {
+          const errorData = await response.json();
+          message = errorData.detail || message;
+        } catch {
+          // Keep the generic message when the backend does not return JSON.
+        }
+        throw new Error(message);
       }
 
       const data = await response.json();
