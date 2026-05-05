@@ -1,0 +1,20 @@
+Subjective:
+- Chief complaint
+- History of present illness
+- Relevant symptoms
+
+Objective:
+- Vitals
+- Physical exam findings
+- Diagnostic results
+
+Assessment:
+- Working diagnosis
+- Differential diagnosis
+- Clinical impression
+
+Plan:
+- Medications
+- Tests or referrals
+- Follow-up instructions
+

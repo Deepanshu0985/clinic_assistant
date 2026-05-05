@@ -1,0 +1,9 @@
+BP = blood pressure
+HR = heart rate
+SOB = shortness of breath
+CP = chest pain
+N/V = nausea and vomiting
+Hx = history
+Dx = diagnosis
+Rx = prescription
+

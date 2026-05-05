@@ -1,0 +1,22 @@
+Medication and Allergy Documentation Guide
+
+Medication fields:
+- medication name
+- dosage or strength
+- route, such as oral, inhaled, topical, or injection
+- frequency or schedule
+- reason for medication when stated
+- whether the medication is current, discontinued, or newly prescribed
+
+Allergy fields:
+- allergen name
+- reaction type, such as rash, swelling, nausea, anaphylaxis, or unknown
+- severity if stated
+- date or approximate timing of reaction if stated
+
+Documentation guidance:
+- If medication details are partial, record only what is provided.
+- Do not infer a dose, route, or frequency.
+- If the note says "NKDA", document no known drug allergies.
+- If allergy status is not mentioned, flag allergies as missing.
+- If a patient denies medications, document no current medications instead of flagging medications as missing.

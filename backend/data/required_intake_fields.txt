@@ -1,0 +1,10 @@
+patient name
+date of birth
+chief complaint
+history of present illness
+current medications
+allergies
+vitals
+assessment
+plan
+

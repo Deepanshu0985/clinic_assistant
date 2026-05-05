@@ -1,0 +1,23 @@
+Standard Patient Intake Checklist
+
+Administrative details:
+- patient name
+- date of birth
+- contact number
+- visit date
+- provider or clinic location
+
+Clinical intake details:
+- chief complaint or reason for visit
+- history of present illness, including onset, duration, severity, and triggers
+- relevant past medical history
+- current medications, dose, and frequency when available
+- allergies and reaction details
+- vital signs such as blood pressure, heart rate, temperature, oxygen saturation, weight, and height
+- relevant review of systems
+
+Documentation guidance:
+- Mark missing fields clearly instead of inventing details.
+- Use patient-reported language for subjective symptoms.
+- Separate objective measurements from subjective complaints.
+- Avoid diagnosis or treatment recommendations unless already documented in the notes.
